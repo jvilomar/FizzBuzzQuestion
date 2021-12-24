@@ -1,7 +1,7 @@
 Jose Manuel Vilomar - Will DomTech Demo
 =========================================================================================================
 
-Sistema de registro de solicitudes de permisos.
+Fizz Buzz Demo App.
 
 Introducción
 ------------
