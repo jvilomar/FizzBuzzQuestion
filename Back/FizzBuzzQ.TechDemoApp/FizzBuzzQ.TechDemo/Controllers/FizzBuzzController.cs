@@ -21,6 +21,7 @@ namespace FizzBuzzQ.TechDemo.Controllers
         [HttpGet]
         public IActionResult FizzBuzzGet(int input)
         {
+            if (input <= 0) return BadRequest("Debe Especificar un valor a procesar.");
             var wordex = new Wordex();
             var result = wordex.GetWordex(input);
             var requestInfo = new RequestInfo { RequestData = String.Join(",", result) };

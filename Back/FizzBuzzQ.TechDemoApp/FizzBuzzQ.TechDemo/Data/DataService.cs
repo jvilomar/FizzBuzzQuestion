@@ -17,19 +17,10 @@ namespace FizzBuzzQ.TechDemo.Data
 
         public void Create(RequestInfo request)
         {
-
-            request.Id = GetNextId();
-
             using var connection = new SqliteConnection(databaseConfig.Name);
 
             connection.Execute("INSERT INTO RequestInfo (RequestData, RequestDate)" +
                 "VALUES (@RequestData, @RequestDate);", request);
-        }
-
-        private int GetNextId()
-        {
-            Random rnd = new Random(100);
-            return rnd.Next();
         }
     }
 }
