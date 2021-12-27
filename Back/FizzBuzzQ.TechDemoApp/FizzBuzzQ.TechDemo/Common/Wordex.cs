@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WillDom.TechDemo.Common;
-using WillDom.TechDemo.Models;
+using FizzBuzzQ.TechDemo.Common;
+using FizzBuzzQ.TechDemo.Models;
 
-namespace WillDom.TechDemo.Common
+namespace FizzBuzzQ.TechDemo.Common
 {
     public class Wordex
     {

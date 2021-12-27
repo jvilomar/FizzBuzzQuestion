@@ -1,10 +1,10 @@
 ﻿using Dapper;
 using Microsoft.Data.Sqlite;
 using System.Linq;
-using WillDom.TechDemo.Interfaces;
-using WillDom.TechDemo.Mdels;
+using FizzBuzzQ.TechDemo.Interfaces;
+using FizzBuzzQ.TechDemo.Models;
 
-namespace WillDom.TechDemo.Data
+namespace FizzBuzzQ.TechDemo.Data
 {
     public class DatabaseSetup : IDatabaseSetup
     {
@@ -24,7 +24,7 @@ namespace WillDom.TechDemo.Data
                 return;
 
             connection.Execute("Create Table RequestInfo (" +
-                "Id INTEGER PRIMARY KEY AUTOINCREMENT," +
+                "Id INTEGER AUTOINCREMENT," +
                 "RequestData VARCHAR(1000) NULL," +
                 "RequestDate VARCHAR(25) NULL);");
         }

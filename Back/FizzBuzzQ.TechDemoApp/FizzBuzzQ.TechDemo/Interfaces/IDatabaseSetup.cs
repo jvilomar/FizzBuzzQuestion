@@ -1,4 +1,4 @@
-﻿namespace WillDom.TechDemo.Interfaces
+﻿namespace FizzBuzzQ.TechDemo.Interfaces
 {
     public interface IDatabaseSetup
     {

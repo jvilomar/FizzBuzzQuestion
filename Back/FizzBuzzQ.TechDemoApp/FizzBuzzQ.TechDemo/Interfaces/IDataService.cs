@@ -1,6 +1,6 @@
-﻿using WillDom.TechDemo.Mdels;
+﻿using FizzBuzzQ.TechDemo.Models;
 
-namespace WillDom.TechDemo.Interfaces
+namespace FizzBuzzQ.TechDemo.Interfaces
 {
     public interface IDataService
     {

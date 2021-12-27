@@ -5,11 +5,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using System;
-using WillDom.TechDemo.Data;
-using WillDom.TechDemo.Interfaces;
-using WillDom.TechDemo.Mdels;
+using FizzBuzzQ.TechDemo.Data;
+using FizzBuzzQ.TechDemo.Interfaces;
+using FizzBuzzQ.TechDemo.Models;
 
-namespace WillDom.TechDemo
+namespace FizzBuzzQ.TechDemo
 {
     public class Startup
     {
@@ -26,7 +26,7 @@ namespace WillDom.TechDemo
             // For this time and since I am testing it from my dev server I can do this.
             // NOT FOR production.
             services.AddCors(options =>
-                    options.AddPolicy(name : "WillDomPolicy", 
+                    options.AddPolicy(name : "FizzBuzzQPolicy", 
                     policy => {
                         policy.WithOrigins("http://localhost:8080");
                         policy.AllowAnyMethod();
@@ -40,7 +40,7 @@ namespace WillDom.TechDemo
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "WillDom.TechDemo", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "FizzBuzzQ.TechDemo", Version = "v1" });
             });
         }
 
@@ -51,10 +51,10 @@ namespace WillDom.TechDemo
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WillDom.TechDemo v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "FizzBuzzQ.TechDemo v1"));
             }
 
-            app.UseCors("WillDomPolicy");
+            app.UseCors("FizzBuzzQPolicy");
             app.UseHttpsRedirection();
 
             app.UseRouting();

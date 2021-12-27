@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WillDom.TechDemo.Interfaces;
+using FizzBuzzQ.TechDemo.Interfaces;
 
-namespace WillDom.TechDemo.Models
+namespace FizzBuzzQ.TechDemo.Models
 {
     public class WordexInfo : IWordexInfo
     {

@@ -1,10 +1,10 @@
 using NUnit.Framework;
 using System.Collections.Generic;
-using WillDom.TechDemo.Common;
-using WillDom.TechDemo.Interfaces;
-using WillDom.TechDemo.Models;
+using FizzBuzzQ.TechDemo.Common;
+using FizzBuzzQ.TechDemo.Interfaces;
+using FizzBuzzQ.TechDemo.Models;
 
-namespace WillDom.TechDemoApp.Tests
+namespace FizzBuzzQ.TechDemoApp.Tests
 {
     public class Tests
     {

@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
-using WillDom.TechDemo.Common;
-using WillDom.TechDemo.Interfaces;
-using WillDom.TechDemo.Mdels;
+using FizzBuzzQ.TechDemo.Common;
+using FizzBuzzQ.TechDemo.Interfaces;
+using FizzBuzzQ.TechDemo.Models;
 
-namespace WillDom.TechDemo.Controllers
+namespace FizzBuzzQ.TechDemo.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

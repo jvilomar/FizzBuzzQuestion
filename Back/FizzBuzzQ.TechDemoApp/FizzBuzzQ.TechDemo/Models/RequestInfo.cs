@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WillDom.TechDemo.Mdels
+namespace FizzBuzzQ.TechDemo.Models
 {
     public class RequestInfo
     {

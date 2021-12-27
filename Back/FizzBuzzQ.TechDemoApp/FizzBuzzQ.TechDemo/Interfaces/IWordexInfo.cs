@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WillDom.TechDemo.Interfaces
+namespace FizzBuzzQ.TechDemo.Interfaces
 {
     public interface IWordexInfo
     {

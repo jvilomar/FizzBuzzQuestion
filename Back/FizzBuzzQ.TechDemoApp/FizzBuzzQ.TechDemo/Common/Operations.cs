@@ -1,6 +1,6 @@
-﻿using WillDom.TechDemo.Interfaces;
+﻿using FizzBuzzQ.TechDemo.Interfaces;
 
-namespace WillDom.TechDemo.Common
+namespace FizzBuzzQ.TechDemo.Common
 {
     public class Operations
     {

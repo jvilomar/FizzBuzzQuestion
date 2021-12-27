@@ -1,10 +1,10 @@
 ﻿using Dapper;
 using Microsoft.Data.Sqlite;
 using System;
-using WillDom.TechDemo.Interfaces;
-using WillDom.TechDemo.Mdels;
+using FizzBuzzQ.TechDemo.Interfaces;
+using FizzBuzzQ.TechDemo.Models;
 
-namespace WillDom.TechDemo.Data
+namespace FizzBuzzQ.TechDemo.Data
 {
     public class DataService : IDataService
     {
@@ -22,8 +22,8 @@ namespace WillDom.TechDemo.Data
 
             using var connection = new SqliteConnection(databaseConfig.Name);
 
-            connection.Execute("INSERT INTO RequestInfo (Id, RequestData, RequestDate)" +
-                "VALUES (@Id, @RequestData, @RequestDate);", request);
+            connection.Execute("INSERT INTO RequestInfo (RequestData, RequestDate)" +
+                "VALUES (@RequestData, @RequestDate);", request);
         }
 
         private int GetNextId()

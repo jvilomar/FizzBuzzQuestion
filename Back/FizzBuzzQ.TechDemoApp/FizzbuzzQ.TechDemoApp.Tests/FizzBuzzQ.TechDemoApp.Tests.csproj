@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WillDom.TechDemo\WillDom.TechDemo.csproj" />
+    <ProjectReference Include="..\FizzBuzzQ.TechDemo\FizzBuzzQ.TechDemo.csproj" />
   </ItemGroup>
 
 </Project>
