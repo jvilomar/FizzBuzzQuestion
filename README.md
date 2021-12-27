@@ -1,7 +1,7 @@
 Jose Manuel Vilomar - FizzBuzz Question Tech Demo
 =========================================================================================================
 
-Sistema de registro de solicitudes de permisos.
+Fizz Buzz Demo App.
 
 Introducción
 ------------
